@@ -20,7 +20,8 @@
   "license": "MIT",
   "files": [
     "/dist",
-    "!/dist/**/*.js.map"
+    "!/dist/**/*.js.map",
+    "!/dist/**/*.tsbuildinfo"
   ],
   "config": {
     "formatted": "**/*.{json,ts,tsx,js,jsx,yaml,yml} !**/dist/*"
