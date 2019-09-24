@@ -1,15 +1,15 @@
 {
-  "name": "ts-npm-template",
+  "name": "npm-ts-template",
   "version": "0.0.0",
   "description": "A configuration template for NPM modules written in Typescript",
   "main": "dist/index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/MaximeKjaer/ts-npm-template.git"
+    "url": "git+https://github.com/MaximeKjaer/npm-ts-template.git"
   },
-  "homepage": "https://github.com/MaximeKjaer/ts-npm-template#readme",
+  "homepage": "https://github.com/MaximeKjaer/npm-ts-template#readme",
   "bugs": {
-    "url": "https://github.com/MaximeKjaer/ts-npm-template/issues"
+    "url": "https://github.com/MaximeKjaer/npm-ts-template/issues"
   },
   "keywords": [
     "npm",

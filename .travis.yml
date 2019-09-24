@@ -15,4 +15,4 @@ deploy:
     email: maxime.kjaer@gmail.com # npmjs.com account email
     on:
       tags: true
-      repo: MaximeKjaer/ts-npm-template
+      repo: MaximeKjaer/npm-ts-template
