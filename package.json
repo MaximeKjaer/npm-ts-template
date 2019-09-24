@@ -1,0 +1,58 @@
+{
+  "name": "ts-npm-template",
+  "version": "0.0.0",
+  "description": "A configuration template for NPM modules written in Typescript",
+  "main": "dist/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MaximeKjaer/ts-npm-template.git"
+  },
+  "homepage": "https://github.com/MaximeKjaer/ts-npm-template#readme",
+  "bugs": {
+    "url": "https://github.com/MaximeKjaer/ts-npm-template/issues"
+  },
+  "keywords": [
+    "npm",
+    "typescript",
+    "template"
+  ],
+  "author": "Maxime Kjaer <maxime.kjaer@gmail.com>",
+  "license": "MIT",
+  "files": [
+    "/dist",
+    "!/dist/**/*.js.map"
+  ],
+  "config": {
+    "formatted": "**/*.{json,ts,tsx,js,jsx,yaml,yml} !**/dist/*"
+  },
+  "scripts": {
+    "build": "npm-run-all build:*",
+    "build:ts": "tsc --project tsconfig.build.json",
+    "clean": "rimraf dist",
+    "test": "npm-run-all test:*",
+    "test:format": "prettier --check $npm_package_config_formatted",
+    "test:lint": "tslint --project tsconfig.json",
+    "test:package": "pkg-ok",
+    "test:tslint-config": "tslint-config-prettier-check ./tslint.json",
+    "test:unit": "mocha",
+    "fix": "npm-run-all fix:lint fix:format",
+    "fix:format": "prettier --write $npm_package_config_formatted",
+    "fix:lint": "tslint --fix --project tsconfig.json",
+    "preversion": "npm-run-all clean build test",
+    "postversion": "git push && git push --tags"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.2.2",
+    "@types/mocha": "^5.2.7",
+    "chai": "^4.2.0",
+    "mocha": "^6.2.0",
+    "npm-run-all": "^4.1.5",
+    "pkg-ok": "^2.3.1",
+    "prettier": "^1.18.2",
+    "rimraf": "^3.0.0",
+    "ts-node": "^8.3.0",
+    "tslint": "^5.20.0",
+    "tslint-config-prettier": "^1.18.0",
+    "typescript": "^3.5.3"
+  }
+}

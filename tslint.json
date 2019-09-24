@@ -1,0 +1,20 @@
+{
+  "extends": ["tslint:recommended", "tslint-config-prettier"],
+  "rules": {
+    "variable-name": [
+      true,
+      "ban-keywords",
+      "check-format",
+      "allow-leading-underscore"
+    ],
+    "member-access": [true, "no-public"],
+    "arrow-parens": false,
+    "interface-name": false,
+    "max-classes-per-file": false,
+    "curly": [true, "ignore-same-line"],
+    "member-ordering": false,
+    "object-literal-sort-keys": false,
+    "no-default-export": true,
+    "no-restricted-globals": true
+  }
+}
