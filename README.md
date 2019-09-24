@@ -1,6 +1,8 @@
 # ts-npm-template
 
-A configuration template for NPM modules written in Typescript.
+[![Build Status](https://travis-ci.com/MaximeKjaer/ts-npm-template.svg?token=soqG4sgcMQUgpCtPSUUr&branch=master)](https://travis-ci.com/MaximeKjaer/ts-npm-template)
+
+A configuration template for NPM modules written in TypeScript.
 
 ## Commands
 
