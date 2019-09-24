@@ -12,7 +12,7 @@ script:
 deploy:
   - provider: npm
     skip_cleanup: true # do not delete dist before deployment
-    email: firstname.lastname@example.com # npmjs.com account email
+    email: maxime.kjaer@gmail.com # npmjs.com account email
     on:
       tags: true
-      repo: myGitHubUsername/myRepoName
+      repo: MaximeKjaer/ts-npm-template
