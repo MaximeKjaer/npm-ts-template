@@ -32,3 +32,10 @@ If you want to use this template for your project, you can [start a new repo wit
 | `fix:lint`           | Fix linting errors in TypeScript files                                           |
 | `fix:format`         | Fix formatting errors for all JavaScript, TypeScript, JSON and YAML files        |
 
+## Releasing versions
+To release a new version, run `npm version patch`, `npm version minor` or `npm version major`. Travis CI will automatically deploy the new version once the CI build passes.
+
+## Bonus gotcha!
+Here is a bonus gotcha that I didn't mention in the article:
+
+`pkg-ok` can give false positives if there are stale build artifacts, so it's important to clean before building when releasing a version, to make sure that the `package.json` we're about to release is valid. Still, at the very worst case, the CI would catch the error, although a version number may already have been issued at that point, in which case we've "wasted" a version number.
