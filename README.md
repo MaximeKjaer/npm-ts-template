@@ -5,14 +5,15 @@
 A configuration template for NPM modules written in TypeScript.
 
 ## Using this template
-If you want to use this template for your project, you can [start a new repo with the same files and folders as this repo](https://github.com/MaximeKjaer/npm-ts-template/generate). Remember to change:
+If you want to use this template for your project, you can [start a new repo with the same files and folders as this repo](https://github.com/MaximeKjaer/npm-ts-template/generate). Remember to:
 
-- [ ] Author name in `LICENSE`
-- [ ] Author name in `package.json`
-- [ ] GitHub repo links in `package.json`
-- [ ] Email in `.travis.yml`
-- [ ] GitHub repo link in `.travis.yml`
-- [ ] Badge link in `README`
+- [ ] Remove the API key in `.travis.yml`
+- [ ] Change the email in `.travis.yml`
+- [ ] Change the GitHub repo link in `.travis.yml`
+- [ ] Change the GitHub repo links in `package.json`
+- [ ] Change the author name in `package.json`
+- [ ] Change the author name in `LICENSE`
+- [ ] Change links in `README`
 
 ## Commands
 
@@ -30,3 +31,4 @@ If you want to use this template for your project, you can [start a new repo wit
 | `fix`                | Run all fixes                                                                    |
 | `fix:lint`           | Fix linting errors in TypeScript files                                           |
 | `fix:format`         | Fix formatting errors for all JavaScript, TypeScript, JSON and YAML files        |
+

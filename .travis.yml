@@ -10,9 +10,12 @@ script:
   - npm run build
   - npm run test
 deploy:
-  - provider: npm
-    skip_cleanup: true # do not delete dist before deployment
-    email: maxime.kjaer@gmail.com # npmjs.com account email
-    on:
-      tags: true
-      repo: MaximeKjaer/npm-ts-template
+  matrix:
+    - provider: npm
+      skip_cleanup: true
+      email: maxime.kjaer@gmail.com # npmjs.com account email
+      on:
+        tags: true
+        repo: MaximeKjaer/npm-ts-template
+  api_key:
+    secure: KIm+wRLNdohwYwPkVs4KghfJJkYu2YfSVPzvG92/iKzcspGmfh+WWq8HPtj4e9nY/DAPCnhNbjX1Hd0aQmBMDZTkgED+ArtdIDQXVCEeTwPf2djdzWcuGLl9zxLik/rES+mIWLfWQ9lQKE8rlHKLbmCvi/7SSYxHxstOhmZCu4ELV06DwI+NoDNwNDgIh043pRyIhIbZTPGZE8v5zy+sXcOfCIHc7MbXcJv1qrQRn/eJMfEWwu8JUArFGg4mQkaSnYs9qtxzib/31EcwITSBYzhDylX1VxjJlcjUZ+eGNZoJEe3AL/veVcqljM+ZrXAHd9WzM/kLC3Gv3aCfO7c+Au2A50eAHcBLIDakw9sEuPIsbE6eWICeDerryt1OR9m9AhxfpcKKqa7cirdvCHMQDC7oQCwmBCJ02tjjArLVC36SCmnK82eSc3mBC9D4cTNS8RgUGnrKMjpEhv0nb1C+B0F87s+74sdZwkGf3stSl+MuXWpvubLX0zGeX4MWf4otRmOGYrVod946/olZjFJ+Nmn/oLug5DZV9T3/H77yu2ZQlMnqChabP36jCGaoB85+ltPwbk+4tTbK8zokrZggNXw+i0wBpLiadbN4Q4Wk82L2HI0uIewUFYVaZNES/uYeLAZDQFRCNvzIpAsuBGhj2K+XvhMu5Z2PKDlz89ctfwk=
