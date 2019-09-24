@@ -1,8 +1,18 @@
-# ts-npm-template
+# Configuration template for NPM modules written in TypeScript
 
 [![Build Status](https://travis-ci.com/MaximeKjaer/ts-npm-template.svg?token=soqG4sgcMQUgpCtPSUUr&branch=master)](https://travis-ci.com/MaximeKjaer/ts-npm-template)
 
 A configuration template for NPM modules written in TypeScript.
+
+## Using this template
+If you want to use this template for your project, you can [start a new repo with the same files and folders as this repo](https://github.com/MaximeKjaer/ts-npm-template/generate). Remember to change:
+
+- [ ] Author name in `LICENSE`
+- [ ] Author name in `package.json`
+- [ ] GitHub repo links in `package.json`
+- [ ] Email in `.travis.yml`
+- [ ] GitHub repo link in `.travis.yml`
+- [ ] Badge link in `README`
 
 ## Commands
 
