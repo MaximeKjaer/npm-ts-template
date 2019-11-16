@@ -24,7 +24,7 @@
     "!/dist/**/*.tsbuildinfo"
   ],
   "config": {
-    "formatted": "**/*.{json,ts,tsx,js,jsx,yaml,yml} !**/dist/*"
+    "formatted": "**/*.{json,ts,tsx,js,jsx,yaml,yml}"
   },
   "scripts": {
     "build": "npm-run-all build:*",
