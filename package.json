@@ -1,22 +1,22 @@
 {
-  "name": "npm-ts-template",
+  "name": "fixme-npm-ts-template",
   "version": "0.0.0",
-  "description": "A configuration template for NPM modules written in Typescript",
+  "description": "FIXME A configuration template for NPM modules written in Typescript",
   "main": "dist/index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/MaximeKjaer/npm-ts-template.git"
+    "url": "FIXME git+https://github.com/GITHUB-USERNAME/REPO-NAME.git"
   },
-  "homepage": "https://github.com/MaximeKjaer/npm-ts-template#readme",
+  "homepage": "FIXME https://github.com/GITHUB-USERNAME/REPO-NAME#readme",
   "bugs": {
-    "url": "https://github.com/MaximeKjaer/npm-ts-template/issues"
+    "url": "FIXME https://github.com/GITHUB-USERNAME/REPO-NAME/issues"
   },
   "keywords": [
     "npm",
     "typescript",
     "template"
   ],
-  "author": "Maxime Kjaer <maxime.kjaer@gmail.com>",
+  "author": "FIXME Firstname Lastname <firstname.lastname@example.com>",
   "license": "MIT",
   "files": [
     "/dist",

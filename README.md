@@ -5,6 +5,7 @@
 A configuration template for NPM modules written in TypeScript.
 
 ## Using this template
+
 If you want to use this template for your project, you can [start a new repo with the same files and folders as this repo](https://github.com/MaximeKjaer/npm-ts-template/generate). Remember to:
 
 - [ ] Remove the API key in `.travis.yml`
@@ -14,6 +15,8 @@ If you want to use this template for your project, you can [start a new repo wit
 - [ ] Change the author name in `package.json`
 - [ ] Change the author name in `LICENSE`
 - [ ] Change links in `README`
+
+You can also search the project for "fixme" (case insensitive) to find what what needs to be changed. Please remember to change the `LICENSE` as well! It does not include a `fixme` annotation in order not to mess with its validity.
 
 ## Commands
 
@@ -33,9 +36,11 @@ If you want to use this template for your project, you can [start a new repo wit
 | `fix:format`         | Fix formatting errors for all JavaScript, TypeScript, JSON and YAML files        |
 
 ## Releasing versions
+
 To release a new version, run `npm version patch`, `npm version minor` or `npm version major`. Travis CI will automatically deploy the new version once the CI build passes.
 
 ## Bonus gotcha!
+
 Here is a bonus gotcha that I didn't mention in the article:
 
 `pkg-ok` can give false positives if there are stale build artifacts, so it's important to clean before building when releasing a version, to make sure that the `package.json` we're about to release is valid. Still, at the very worst case, the CI would catch the error, although a version number may already have been issued at that point, in which case we've "wasted" a version number.
