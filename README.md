@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.com/MaximeKjaer/npm-ts-template.svg?token=soqG4sgcMQUgpCtPSUUr&branch=master)](https://travis-ci.com/MaximeKjaer/npm-ts-template)
 
-A configuration template for NPM modules written in TypeScript.
+A configuration template for NPM modules written in TypeScript. This is the companion repository to [this article](https://kjaer.io/ts-npm-config/).
 
 ## Using this template
 
