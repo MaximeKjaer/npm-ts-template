@@ -10,12 +10,11 @@ script:
   - npm run build
   - npm run test
 deploy:
-  matrix:
-    - provider: npm
-      skip_cleanup: true # Do not delete dist before deployment
-      email: FIXME firstname.lastname@example.com # npmjs.com account email
-      on:
-        tags: true
-        repo: FIXME GITHUB-USERNAME/REPO-NAME
-  api_key:
-    secure: FIXME
+  - provider: npm
+    skip_cleanup: true # Do not delete dist before deployment
+    email: FIXME firstname.lastname@example.com # npmjs.com account email
+    on:
+      tags: true
+      repo: FIXME GITHUB-USERNAME/REPO-NAME
+    api_key:
+      secure: FIXME
