@@ -28,11 +28,7 @@
     // Generate a source map from JS to TS. Useful for debugging.
     // Don't forget to blacklist ./dist/**/*.js.map in the "files" key of package.json
     "sourceMap": true,
-
-    // Enable incremental builds.
-    // Don't forget to blacklist ./dist/**/*.tsbuildinfo in the "files" key of package.json
-    "incremental": true,
-
+    
     // Generate a .d.ts file, for TypeScript users.
     "declaration": true,
 

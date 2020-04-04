@@ -1,8 +1,18 @@
 {
   "extends": "./tsconfig.json",
   "compilerOptions": {
+    // Place compiled files in ./dist
+    // Don't forget to add "./dist" to the "files" key of package.json
     "outDir": "./dist",
+
+    // Enable incremental builds.
+    // Don't forget to add "!./dist/**/*.tsbuildinfo" in the "files" key of package.json
+    "incremental": true,
+
+    // The build should not not emit, so it should emit!
     "noEmit": false
   },
+
+  // Only include TypeScript files that should be built
   "include": ["src"]
 }
