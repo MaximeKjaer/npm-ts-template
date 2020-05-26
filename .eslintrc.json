@@ -1,0 +1,78 @@
+{
+  // Do not look in parent directories for more ESLint options
+  "root": true,
+  "env": {
+    "browser": true,
+    "es6": true,
+    "node": true
+  },
+  // Set up TS parsing
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "project": "tsconfig.json",
+    "sourceType": "module"
+  },
+  "plugins": ["@typescript-eslint", "import"],
+  "extends": [
+    // Recommended defaults for ESLint:
+    "eslint:recommended",
+    // Turn off what's checked by TS compiler:
+    "plugin:@typescript-eslint/eslint-recommended",
+    // Turn on recommended TS-specific rules:
+    "plugin:@typescript-eslint/recommended",
+    // Turn on extra rules that require type-checking:
+    "plugin:@typescript-eslint/recommended-requiring-type-checking",
+    // Turn on rules for imports:
+    "plugin:import/typescript",
+    // Turn off rules conflicting with Prettier:
+    "prettier"
+  ],
+  "ignorePatterns": ["node_modules", "dist", "coverage"],
+  "rules": {
+    // This is already checked by Typescript's "noUnusedLocals" setting
+    "@typescript-eslint/no-unused-vars": "off",
+
+    // No reason to disallow
+    "@typescript-eslint/no-inferrable-types": "off",
+
+    // Optimize code for legibility, not for ease of parsing
+    "@typescript-eslint/no-use-before-define": "off",
+
+    // Allow all interface names
+    "@typescript-eslint/interface-name-prefix": "off",
+
+    // Require type annotations for return types, with some exceptions
+    "@typescript-eslint/explicit-function-return-type": [
+      "warn",
+      {
+        "allowExpressions": true,
+        "allowTypedFunctionExpressions": true,
+        "allowHigherOrderFunctions": true
+      }
+    ],
+
+    // Disallow default exports; only allow named exports
+    "import/no-default-export": "error",
+
+    // Impose alphabetically ordered imports
+    "import/order": "error",
+
+    // Standardize usage of array types (`T[]` or `Array<T>`)
+    "@typescript-eslint/array-type": [
+      "error",
+      { "default": "array-simple", "readonly": "generic" }
+    ],
+
+    // Disallow variable names conflicting with deprecated globals
+    "no-restricted-globals": [
+      "error",
+      "event",
+      "name",
+      "external",
+      "orientation"
+    ],
+
+    // Disallow use of `console`
+    "no-console": "error"
+  }
+}
